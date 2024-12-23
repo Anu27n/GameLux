@@ -10,8 +10,8 @@ const navItems = ["Nexus", "Vault", "Prologue", "About", "Contact"];
 
 const NavBar = () => {
   // State for toggling audio and visual indicator
-  const [isAudioPlaying, setIsAudioPlaying] = useState(false);
-  const [isIndicatorActive, setIsIndicatorActive] = useState(false);
+  const [isAudioPlaying, setIsAudioPlaying] = useState(true);
+  const [isIndicatorActive, setIsIndicatorActive] = useState(true);
 
   // Refs for audio and navigation container
   const audioElementRef = useRef(null);
@@ -29,10 +29,13 @@ const NavBar = () => {
 
   // Manage audio playback
   useEffect(() => {
+    const audioElement = audioElementRef.current;
     if (isAudioPlaying) {
-      audioElementRef.current.play();
+      audioElement.play().catch((error) => {
+        console.error("Audio playback failed:", error);
+      });
     } else {
-      audioElementRef.current.pause();
+      audioElement.pause();
     }
   }, [isAudioPlaying]);
 
@@ -62,6 +65,14 @@ const NavBar = () => {
     });
   }, [isNavVisible]);
 
+  // Ensure audio plays on initial load
+  useEffect(() => {
+    const audioElement = audioElementRef.current;
+    audioElement.play().catch((error) => {
+      console.error("Audio playback failed:", error);
+    });
+  }, []);
+
   return (
     <div
       ref={navContainerRef}
@@ -76,6 +87,13 @@ const NavBar = () => {
             <Button
               id="product-button"
               title="Products"
+              rightIcon={<TiLocationArrow />}
+              containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
+            />
+
+            <Button
+              id="whitepaper-button"
+              title="Whitepaper"
               rightIcon={<TiLocationArrow />}
               containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
             />
@@ -104,6 +122,7 @@ const NavBar = () => {
                 className="hidden"
                 src="/audio/loop.mp3"
                 loop
+                autoPlay
               />
               {[1, 2, 3, 4].map((bar) => (
                 <div
