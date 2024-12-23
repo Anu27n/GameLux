@@ -1,10 +1,12 @@
 import Hero from './components/Hero.jsx';
+import About from './components/About.jsx'; // Ensure you have this component
 
 const App = () => {
   return (
-    <main className="relative min-h-screen w-screen overflox-x-hidden">
+    <div>
       <Hero />
-    </main>
+      <About />
+    </div>
   );
 };
 
