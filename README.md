@@ -1,81 +1,96 @@
+# GameLux
+
 <div align="center">
   <br />
     <a href="#" target="_blank">
       <img src="https://github.com/user-attachments/assets/ab600f24-f4d9-4cef-8f1e-3fd9194afb30" alt="Project Banner">
     </a>
   <br />
-
-  <div>
-    <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
-    <img src="https://img.shields.io/badge/-GSAP-black?style=for-the-badge&logoColor=white&logo=greensock&color=88CE02" alt="greensock" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
-  </div>
-
-  <h3 align="center">An Awwwards Winning Website</h3>
 </div>
 
+## About the Project
+**GameLux** is a modern, visually captivating gaming website built with **React.js**, **GSAP**, and **Tailwind CSS**. The site is designed to deliver a seamless user experience with cutting-edge animations, responsive layouts, and optimized performance. 
 
+Inspired by **Zentry**, GameLux showcases:
+- **Scroll-triggered animations**
+- **Geometric transitions**
+- **Engaging video storytelling**
 
-## <a name="introduction">🤖 Introduction</a>
+This project emphasizes a luxurious, modern feel, focusing on engaging UI/UX and smooth responsiveness, capturing the essence of what makes an **Awwwards-winning** website.
 
-Built a visually captivating website inspired by **[Zentry](https://zentry.com/)**, featuring scroll-triggered animations, geometric transitions, and engaging video storytelling. Learn how to deliver a luxurious, modern feel, focusing on engaging UI/UX and smooth responsiveness, capturing the essence of what makes an Awwwards winner.
+---
 
+## Features
+- **Interactive Animations**: Powered by GSAP for a rich and engaging user experience.
+- **Responsive Design**: Seamlessly adapts to all screen sizes with Tailwind CSS.
+- **Modern UI/UX**: Delivering a clean, sleek, and intuitive user interface.
+- **Optimized Performance**: Ensuring fast loading times and smooth navigation.
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+---
 
-- GSAP
-- React.js
-- Tailwind CSS
+## Tech Stack
+<div align="center">
+  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white&style=for-the-badge" alt="React.js" />
+  <img src="https://img.shields.io/badge/GSAP-88CE02?logo=greensock&logoColor=white&style=for-the-badge" alt="GSAP" />
+  <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white&style=for-the-badge" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white&style=for-the-badge" alt="Vite" />
+</div>
 
-## <a name="features">🔋 Features</a>
+---
 
-👉 **Scroll-Based Animations**: Dynamic animations triggered by scrolling for a more engaging user experience.
+## Getting Started
+Follow these instructions to set up the project locally.
 
-👉 **Clip Path Shaped Animations**: Unique geometric transitions using CSS clip-paths to create visually stunning effects.
+### Prerequisites
+- **Node.js** and **npm** installed on your system.
 
-👉 **3D Hover Effects**: Interactive 3D transformations that respond to user interactions for a modern feel.
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/YourUsername/GameLux.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd GameLux
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-👉 **Video Transitions**: Seamlessly integrated video elements to enhance storytelling and flow.
-
-👉 **Smooth UI/UX**: Polished interfaces with buttery-smooth interactions for an intuitive user journey.
-
-👉 **Completely Responsive**: Flawless adaptation across all devices, ensuring a consistent experience.
-
-and many more, including code architecture and reusability
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-**Cloning the Repository**
-
+### Build for Production
+To create an optimized build:
 ```bash
-git clone https://github.com/Anu27n/Animated
-cd Animated
+npm run build
 ```
 
-**Installation**
+---
 
-Install the project dependencies using npm:
-
-```bash
-npm install
+## Folder Structure
+```
+GameLux/
+├── public/
+├── src/
+│   ├── components/    # React components
+│   ├── assets/        # Images, videos, and other assets
+│   ├── styles/        # Tailwind CSS styles
+│   ├── App.jsx        # Main app component
+│   └── main.jsx       # Entry point
+├── package.json
+├── README.md
+└── vite.config.js
 ```
 
-**Running the Project**
+---
 
-```bash
-npm run dev
-```
+## Acknowledgments
+- Inspired by [Zentry](https://zentry.com/) for design and animation ideas.
+- Thanks to the creators of **React**, **GSAP**, and **Tailwind CSS** for the amazing tools.
 
-Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
+---
 
 
