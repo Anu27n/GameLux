@@ -47,7 +47,7 @@ Follow these instructions to set up the project locally.
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YourUsername/GameLux.git
+   git clone https://github.com/Anu27n/GameLux.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -77,9 +77,9 @@ GameLux/
 ├── src/
 │   ├── components/    # React components
 │   ├── assets/        # Images, videos, and other assets
-│   ├── styles/        # Tailwind CSS styles
+│   
 │   ├── App.jsx        # Main app component
-│   └── main.jsx       # Entry point
+│   
 ├── package.json
 ├── README.md
 └── vite.config.js
