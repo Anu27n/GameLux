@@ -29,7 +29,7 @@ This project emphasizes a luxurious, modern feel, focusing on engaging UI/UX and
 ---
 
 ## Tech Stack
-<div align="center">
+<div align="left">
   <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white&style=for-the-badge" alt="React.js" />
   <img src="https://img.shields.io/badge/GSAP-88CE02?logo=greensock&logoColor=white&style=for-the-badge" alt="GSAP" />
   <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white&style=for-the-badge" alt="Tailwind CSS" />
