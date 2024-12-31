@@ -68,24 +68,6 @@ To create an optimized build:
 npm run build
 ```
 
----
-
-## Folder Structure
-```
-GameLux/
-├── public/
-├── src/
-│   ├── components/    # React components
-│   ├── assets/        # Images, videos, and other assets
-│   
-│   ├── App.jsx        # Main app component
-│   
-├── package.json
-├── README.md
-└── vite.config.js
-```
-
----
 
 ## Acknowledgments
 - Inspired by [Zentry](https://zentry.com/) for design and animation ideas.
