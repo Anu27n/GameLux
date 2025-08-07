@@ -1,5 +1,6 @@
 import { gsap } from "gsap";
 import { useState, useRef, useEffect } from "react";
+import PropTypes from "prop-types";
 
 export const VideoPreview = ({ children }) => {
   const [isHovering, setIsHovering] = useState(false);
@@ -79,6 +80,10 @@ export const VideoPreview = ({ children }) => {
       </div>
     </section>
   );
+};
+
+VideoPreview.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default VideoPreview;

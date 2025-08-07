@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import PropTypes from "prop-types";
 
 const Button = ({ id, title, rightIcon, leftIcon, containerClass }) => {
   return (
@@ -23,6 +24,14 @@ const Button = ({ id, title, rightIcon, leftIcon, containerClass }) => {
       {rightIcon}
     </button>
   );
+};
+
+Button.propTypes = {
+  id: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  rightIcon: PropTypes.node,
+  leftIcon: PropTypes.node,
+  containerClass: PropTypes.string,
 };
 
 export default Button;
